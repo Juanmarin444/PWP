@@ -19,17 +19,18 @@
         <h1 style="font-size: 50px; margin-bottom: 35px; font-weight: 300;">Get In Touch</h1>
         <div class="main2_center">
           <h3 id="get_in_touch">Thanks for stopping by! You can contact me using this form or by sending me an email.</h3>
-          <form id="contactform" method="post" action="">
+
+          <form id="contactform" method="post" action="contact-form-handle.php">
             <div class="form-item name-field clearfix">
               <label class="contact-label" for="contactname">Name:</label>
               <div class="input-wrapper">
-                <input type="text" size="50" name="contactname" id="contactname" value="" class="required form-text">
+                <input type="text" size="50" name="name" id="contactname" value="" class="required form-text" placeholder="Your Name"required>
               </div>
             </div>
             <div class="form-item email-field clearfix">
               <label class="contact-label" for="email">Email:</label>
               <div class="input-wrapper">
-                <input type="text" size="50" name="email" id="email" value="" class="required email form-text">
+                <input type="email" size="50" name="email" id="email" value="" class="required email form-text" placeholder="Your Email" required>
             	</div>
             </div>
             <div class="form-item message-field clearfix">
@@ -37,14 +38,15 @@
               <div class="textarea-wrapper">
                 <div class="textarea-top"></div>
                 <div class="textarea-inner">
-                	<textarea rows="5" cols="50" name="message" id="message" class="required"></textarea>
+                	<textarea rows="5" cols="50" name="message" id="message" class="required" placeholder="message" required></textarea>
                 </div>
                   <div class="textarea-footer">
                   </div>
               </div>
             </div>
-            <input class="form-submit" type="submit" value="CLICK ME!" name="submit">
+            <input class="form-submit" type="submit" value="SEND MESSAGE">
           </form>
+
         </div>
       </div>
       <div id="footer">
