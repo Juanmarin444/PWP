@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <title>Juan Marin | Contact</title>
   </head>
   <body>
@@ -18,9 +19,10 @@
       <div id="main2">
         <h1 style="font-size: 50px; margin-bottom: 35px; font-weight: 300;">Get In Touch</h1>
         <div class="main2_center">
-          <h3 id="get_in_touch">Thanks for stopping by! You can contact me using this form or by sending me an email.</h3>
-
-          <form id="contactform" method="post" action="contact-form-handle.php">
+          <div id="get_in_touch">
+            <h3>Thanks for stopping by! You can contact me using this form or by sending me an email.</h3>
+          </div>
+          <form id="contactform" action="post" data-netlify="true">
             <div class="form-item name-field clearfix">
               <label class="contact-label" for="contactname">Name:</label>
               <div class="input-wrapper">
@@ -30,7 +32,7 @@
             <div class="form-item email-field clearfix">
               <label class="contact-label" for="email">Email:</label>
               <div class="input-wrapper">
-                <input type="email" size="50" name="email" id="email" value="" class="required email form-text" placeholder="Your Email" required>
+                <input type="text" size="50" name="email" id="email" value="" class="required email form-text" placeholder="Your Email" required>
             	</div>
             </div>
             <div class="form-item message-field clearfix">
@@ -44,7 +46,12 @@
                   </div>
               </div>
             </div>
-            <input class="form-submit" type="submit" value="SEND MESSAGE">
+            <div>
+              <div data-netlify-recaptcha="">
+
+              </div>
+            </div>
+            <input class="form-submit" type="submit" value="SEND">
           </form>
 
         </div>
@@ -65,7 +72,7 @@
             <p style="font-size: 12px; margin-top: 10px;">Copyright Copyright Mumbojumbo Copyright 2020.</p>
           </div> <!-- Footer_Left -->
           <div id="footer-right">
-            <h2 style="margin-bottom: 15px;">Site Links</h2>
+            <h2 style="margin-bottom: 5px;">Site Links</h2>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="projects.html">Projects</a></li>
